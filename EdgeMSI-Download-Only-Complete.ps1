@@ -226,6 +226,6 @@ Write-Host "-- Function Completed: File Downloaded -- " -ForegroundColor Green
 
 }
 
-
+# Call Get-EdgeEnterpriseMSI to download the latest Stable x64 version:
 Get-EdgeEnterpriseMSI -Channel Stable -Platform Windows -Architecture x64 -Folder "$env:USERPROFILE\Downloads\" -Force
 
