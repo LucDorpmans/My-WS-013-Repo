@@ -7,3 +7,10 @@ Get-MyScript "Chrome-Download+Run-Installer.ps1" -EditFile
 Get-MyScript "WAC-Download+Install.ps1" -EditFile
 Get-MyScript "EdgeMSI-Download-Only-Complete.ps1"
 Get-MyScript "Edge-InstallOnly.ps1"
+
+# Demos
+Get-MyScript "DEMOS\PowerShell DSC Demo\Demo-PowerShellDSC Full Instructions.txt"
+Get-MyScript "DEMOS\PowerShell DSC Demo\Demo-PowerShellDSC.ps1"
+Get-MyScript "DEMOS\PowerShell DSC Demo\Demo-PowerShellDSC.txt"
+Get-MyScript "DEMOS\PowerShell DSC Demo\IISConfig.ps1"
+
