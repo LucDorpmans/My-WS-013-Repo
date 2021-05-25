@@ -50,5 +50,5 @@ Param(
 
 }
 
-DownloadFilesFromRepo -Owner "LucDorpmans" -Repository My-WS-013-Repo -DestinationPath C:\Library\Github\
+DownloadFilesFromRepo -Owner "LucDorpmans" -Repository My-WS-013-Repo -DestinationPath C:\Library\
 
