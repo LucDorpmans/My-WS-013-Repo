@@ -1,7 +1,7 @@
 ﻿# 1. On the Azure VM, open PowerShell ISE, copy the file IISConfig.ps1 to C:\DemoFiles\
 New-Item -Name DemoFiles\ -Path C:\ -ItemType Directory 
 Copy-Item $env:USERPROFILE\Documents\IISConfig.ps1 -Destination C:\DemoFiles\IISConfig.ps1 -Force
-Copy-Item C:\Library\DemosPowerShellDSCDemo\IISConfig.ps1 -Destination C:\DemoFiles\IISConfig.ps1 -Force
+Copy-Item C:\Library\Demos\PowerShellDSCDemo\IISConfig.ps1 -Destination C:\DemoFiles\IISConfig.ps1 -Force
 
 PSEdit C:\DemoFiles\IISConfig.ps1 
 
