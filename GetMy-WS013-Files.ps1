@@ -1,12 +1,7 @@
-# GetMy-WS013-Scripts-Short.ps1
+# GetMy-WS013-Files.ps1
 Function Get-MyScript { Param( [string]$AFile,[switch]$EditFile = $False, 
 							   [string]$SPath = "$env:USERPROFILE\Downloads\")
 			Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/My-WS-013-Repo/main/$AFile"  -Outfile "$SPath$AFile" }
-
-Get-MyScript "Chrome-Download+Run-Installer.ps1" -EditFile
-Get-MyScript "WAC-Download+Install.ps1" -EditFile
-Get-MyScript "EdgeMSI-Download-Only-Complete.ps1"
-Get-MyScript "Edge-InstallOnly.ps1"
 
 Function DownloadFilesFromRepo {
 # https://gist.github.com/chrisbrownie/f20cb4508975fb7fb5da145d3d38024a
@@ -50,5 +45,12 @@ Param(
 
 }
 
-DownloadFilesFromRepo -Owner "LucDorpmans" -Repository My-WS-013-Repo -DestinationPath C:\Library\
+
+Get-MyScript "Chrome-Download+Run-Installer.ps1" -EditFile
+Get-MyScript "WAC-Download+Install.ps1" -EditFile
+Get-MyScript "EdgeMSI-Download-Only-Complete.ps1"
+Get-MyScript "Edge-InstallOnly.ps1"
+
+
+DownloadFilesFromRepo -Owner "LucDorpmans" -Repository My-WS-013-Repo -DestinationPath C:\Library\Github\
 
