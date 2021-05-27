@@ -1,7 +1,8 @@
 # GetMy-WS013-Files.ps1
 Function Get-MyScript { Param( [string]$AFile,[switch]$EditFile = $False, 
 							   [string]$SPath = "$env:USERPROFILE\Downloads\")
-			Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/My-WS-013-Repo/main/$AFile"  -Outfile "$SPath$AFile" }
+			Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/My-WS-013-Repo/main/$AFile"  -Outfile "$SPath$AFile" 
+			If ($EditFile) { PSEdit ("$SPath$AFile" )} }}
 
 Function DownloadFilesFromRepo {
 # https://gist.github.com/chrisbrownie/f20cb4508975fb7fb5da145d3d38024a
