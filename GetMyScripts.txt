@@ -1,0 +1,9 @@
+# Download My GitHub Scripts:
+
+# Commands to get my scripts from my GitHub repo:
+#[Net.ServicePointManager]::SecurityProtocol = "tls12, tls11, tls" # Only for older Windows versions
+$MyRepo = "My-WS-013-Repo"
+$MyScript = "GetMy-WS013-Scripts"
+Invoke-Webrequest -Uri "https://raw.githubusercontent.com/LucDorpmans/$MyRepo/main/$MyScript"  -Outfile "$env:USERPROFILE\Downloads\$MyScript"
+PSEdit  ("$env:USERPROFILE\Downloads\$MyScript")
+
